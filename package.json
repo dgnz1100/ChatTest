@@ -1,0 +1,16 @@
+{
+  "name": "chattest-fullstack",
+  "version": "1.0.0",
+  "description": "Full-stack CRUD application with React frontend and Node.js backend",
+  "scripts": {
+    "start:full": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd CRUD-Backend && npm run dev",
+    "start:frontend": "cd CRUD-App && npm run dev",
+    "install:all": "npm install && cd CRUD-Backend && npm install && cd ../CRUD-App && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "author": "",
+  "license": "ISC"
+}
